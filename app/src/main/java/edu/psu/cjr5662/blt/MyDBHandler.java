@@ -56,6 +56,7 @@ public class MyDBHandler extends SQLiteOpenHelper {
         db.insert(TABLE_NAME, null, vals);
         db.close();
     }
+
     public Lab findHandler(String labName) {
         String query = "Select*FROM " + TABLE_NAME + "WHERE" + COLUMN_NAME + " = " + "'" + labName + "'";
         SQLiteDatabase db = this.getWritableDatabase();

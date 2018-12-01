@@ -97,33 +97,43 @@
     <!-- Strings for the software options dropdown list -->
     <string name="software_prompt">Software Options</string>
 
+
     <string-array name="software_arrays">
-        <item>SW1</item>
-        <item>SW2</item>
-        <item>SW3</item>
-        <item>SW4</item>
-        <item>SW5</item>
-        <item>SW6</item>
-        <item>SW7</item>
-        <item>SW8</item>
+        <item>Search By Software</item>
+        <item>Creo</item>
+        <item>Vivado</item>
+        <item>Minitab</item>
+        <item>Visual Studio</item>
+        <item>Alice</item>
+        <item>Matlab</item>
+        <item>Moldflow Synergy</item>
+        <item>MathCad</item>
+        <item>Inventor</item>
+        <item>Java JDK</item>
+        <item>Moldflow Insight</item>
+        <item>Netbeans</item>
     </string-array>
 
     <!-- Strings for the software options dropdown list -->
     <string name="specific_lab_prompt">Specific Lab Lookup</string>
 
     <string-array name="specific_lab_arrays">
-        <item>Lab 1</item>
-        <item>Lab 2</item>
-        <item>Lab 3</item>
-        <item>Lab 4</item>
-        <item>Lab 5</item>
-        <item>Lab 6</item>
+        <item>Search By Labs</item>
         <item>Lab 7</item>
         <item>Lab 8</item>
+        <item>Lab 11</item>
+        <item>Lab 12</item>
+        <item>Lab 13</item>
+        <item>Lab 14</item>
+        <item>Lab 15</item>
+        <item>Lab 147</item>
+        <item>Lab 175</item>
+        <item>Lab 176</item>
     </string-array>
 
 
-   <string name = "hyperlink" > https://gateway.psu-erie.bd.psu.edu </string>
+
+    <string name = "hyperlink" > https://gateway.psu-erie.bd.psu.edu </string>
 
 
 </resources>

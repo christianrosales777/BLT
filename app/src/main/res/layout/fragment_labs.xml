@@ -4,40 +4,60 @@
     android:layout_height="match_parent"
     android:background="@android:color/holo_blue_dark">
 
+    <ScrollView
+        android:id="@+id/LabDisplayScroll"
+        android:layout_width="match_parent"
+        android:layout_height="332dp"
+        android:layout_below="@+id/btnDisplay"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="-3dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="0dp"
+        android:fillViewport="false">
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/listDivider" />
+    </ScrollView>
 
     <Spinner
         android:id="@+id/spinner1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
         android:entries="@array/time_arrays"
         android:prompt="@string/lab_time_prompt"
-        android:textSize="30sp"/>
+        android:textSize="50sp"/>
 
     <Spinner
-    android:id="@+id/spinner2"
-    android:layout_below="@id/spinner1"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:entries="@array/software_arrays"
-    android:prompt="@string/software_prompt"
-    android:textSize="30sp"/>
+        android:id="@+id/spinner2"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/spinner1"
+        android:entries="@array/software_arrays"
+        android:prompt="@string/software_prompt"
+        android:textSize="40sp"/>
 
     <Spinner
         android:id="@+id/spinner3"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
         android:layout_below="@id/spinner2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:entries="@array/specific_lab_arrays"
         android:prompt="@string/specific_lab_prompt"
-        android:textSize="30sp"/>
+        android:textSize="50sp" />
     <!-- Need the layout below lines, otherwise it all overlaps -->
     <Button
         android:id="@+id/btnDisplay"
-        android:layout_below="@id/spinner3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/spinner3"
         android:text="Display Labs"
-        android:textSize="20sp"/>
+        android:textSize="20sp" />
 
 
 </RelativeLayout>

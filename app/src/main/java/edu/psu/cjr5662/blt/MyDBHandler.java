@@ -11,8 +11,10 @@ public class MyDBHandler extends SQLiteOpenHelper {
     private static final int DATABASE_VERSION = 1;
     private static final String DATABASE_NAME = "labDB.db";
     public static final String TABLE_NAME = "Lab";
-    public static final String COLUMN_ID = "LabID";
-    public static final String COLUMN_NAME = "LabName";
+    public static final String COLUMN_LABNUM = "labNumber";
+    public static final String COLUMN_COMPNUM = "computersAvailable";
+    //times?
+    //software?
     //initialize the database
     public MyDBHandler(Context context, String name, SQLiteDatabase.CursorFactory factory, int version) {
         super(context, DATABASE_NAME, factory, DATABASE_VERSION);
@@ -40,31 +42,35 @@ public class MyDBHandler extends SQLiteOpenHelper {
         db.close();
         return res0;
     }
-    public boolean updateHandler(int ID, String name){
-        SQLiteDatabase db = this.getWritableDatabase();
-        ContentValues args = new ContentValues();
-        args.put(COLUMN_ID, ID);
-        args.put(COLUMN_NAME, name);
-        return db.update(TABLE_NAME, args, COLUMN_ID + "=" + ID, null) > 0;
-    }
+    /**
+     public boolean updateHandler(int labNum, int compNum){
+     SQLiteDatabase db = this.getWritableDatabase();
+     ContentValues args = new ContentValues();
+     args.put(COLUMN_LABNUM, labNum);
+     args.put(COLUMN_COMPNUM, compNum);
+     return db.update(TABLE_NAME, args, COLUMN_LABNUM + "=" + labNum, null) > 0;
+     }
 
-    public void addHandler(Lab lab) {
-        ContentValues vals = new ContentValues();
-        //vals.put(COLUMN_ID, lab.getID());
-        //vals.put(COLUMN_NAME, lab.getLabName());
-        SQLiteDatabase db = this.getWritableDatabase();
-        db.insert(TABLE_NAME, null, vals);
-        db.close();
-    }
+     public void addHandler(Lab lab) {
+     ContentValues vals = new ContentValues();
+     //vals.put(COLUMN_ID, lab.getID());
+     //vals.put(COLUMN_NAME, lab.getLabName());
+     SQLiteDatabase db = this.getWritableDatabase();
+     db.insert(TABLE_NAME, null, vals);
+     db.close();
+     }
+     **/
 
-    public Lab findHandler(String labName) {
-        String query = "Select*FROM " + TABLE_NAME + "WHERE" + COLUMN_NAME + " = " + "'" + labName + "'";
+    public Lab findHandler(int labNumber) {
+        String query = "Select*FROM " + TABLE_NAME + "WHERE" + COLUMN_LABNUM + " = " + "'" + labNumber + "'";
         SQLiteDatabase db = this.getWritableDatabase();
         Cursor c = db.rawQuery(query, null);
         Lab l = new Lab();
         if(c.moveToFirst()){
             c.moveToFirst();
-            //l.set...
+            l.setLabNumber(Integer.parseInt(c.getString(0)));
+            l.setComputers(Integer.parseInt(c.getString(1)));
+            //l.setAvailableSoftware();
             c.close();
         }else
             l = null;

@@ -122,4 +122,8 @@
         <item>Lab 8</item>
     </string-array>
 
+
+   <string name = "hyperlink" > https://gateway.psu-erie.bd.psu.edu </string>
+
+
 </resources>

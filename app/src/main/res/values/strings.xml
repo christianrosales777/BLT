@@ -92,6 +92,7 @@
         <item>5:00 PM- 6:00 PM</item>
         <item>6:00 PM- 7:00 PM</item>
         <item>7:00 PM- 8:00 PM</item>
+        <item>8:00 PM- 9:00 PM</item>
     </string-array>
 
     <!-- Strings for the software options dropdown list -->
@@ -144,6 +145,6 @@
     </string-array>
 
     <string name = "hyperlink" > https://gateway.psu-erie.bd.psu.edu </string>
-
+    <string name = "software_request_hyperlink" >  https://intranet.bd.psu.edu/intranet/instructional-software-readiness-program </string>
 
 </resources>

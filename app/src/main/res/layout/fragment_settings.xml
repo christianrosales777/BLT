@@ -1,108 +1,151 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:isScrollContainer="true"
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    android:scrollbars="vertical">
 
-    <TextView
-        android:textColor="@color/colorPrimaryDark"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_alignParentTop="true"
-        android:textStyle="bold"
-        android:textSize="40dp"
-        android:text="Resources"/>
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Resources"
+            android:gravity="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="50dp"
+            android:textStyle="bold" />
 
-    <TextView
-        android:layout_width="294dp"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
-        android:gravity="center_horizontal"
-        android:text="Behrend IT Help Desk"
-        android:textColor="@color/colorPrimaryDark"
-        android:textSize="30dp"
-        android:textStyle="bold" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Behrend IT Help Desk"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="30dp"
+            android:textStyle="bold" />
 
-    <TextView
-        android:textColor="@color/colorPrimaryDark"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="90dp"
-        android:text="814-217-HELP"
-        android:textSize="18dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="814-217-HELP"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18dp" />
 
-    <TextView
-        android:textColorLink = "@color/colorPrimary"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="110dp"
-        android:autoLink="email"
-        android:text="BDITHelp@psu.edu"
-        android:textSize="18dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:autoLink="email"
+            android:gravity="center"
+            android:text="BDITHelp@psu.edu"
+            android:textColorLink="@color/colorPrimary"
+            android:textSize="18dp" />
 
-    <TextView
-        android:textColor="@color/colorPrimaryDark"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="200dp"
-        android:text="Access Remote Lab"
-        android:textSize="30dp"
-        android:textStyle="bold" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Access Remote Lab"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:textStyle="bold" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="240dp"
-        android:gravity="center"
-        android:textColorLink = "@color/colorPrimary"
-        android:text="@string/hyperlink"
-        android:autoLink="web"
-        android:textSize="18dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:autoLink="web"
+            android:gravity="center"
+            android:text="@string/hyperlink"
+            android:textColorLink="@color/colorPrimary"
+            android:textSize="18dp" />
 
-    <TextView
-        android:textColor="@color/colorPrimaryDark"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="330dp"
-        android:text="24/7 ID Access Labs"
-        android:textSize="30dp"
-        android:textStyle="bold" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="24/7 ID Access Labs"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="30dp"
+            android:textStyle="bold" />
 
-    <TextView
-        android:textColor="@color/colorPrimaryDark"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="370dp"
-        android:text="Nick 155, 156"
-        android:textSize="18dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Nick 155, 156"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18dp" />
 
-    <TextView
-        android:textColor="@color/colorPrimaryDark"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="390dp"
-        android:text="Witkowski 109"
-        android:textSize="18dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Witkowski 109"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18dp" />
 
-    <TextView
-        android:textColor="@color/colorPrimaryDark"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="410dp"
-        android:text="Burke 153, 175, 176"
-        android:textSize="18dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Burke 153, 175, 176"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18dp" />
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Instructional Software Readiness Program"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="30dp"
+            android:textStyle="bold" />
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Instructors may request BITS add software to labs for their classes here:"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18dp" />
 
-
-</RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:autoLink="web"
+            android:gravity="center"
+            android:text="@string/software_request_hyperlink"
+            android:textColorLink="@color/colorPrimary"
+            android:textSize="18dp" />
+    </LinearLayout>
+</ScrollView>

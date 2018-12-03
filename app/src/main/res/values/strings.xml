@@ -79,7 +79,7 @@
     <string name="lab_time_prompt">Lab Time</string>
 
     <string-array name="time_arrays">
-        <item>Display Labs Available </item>
+        <item>Select Time Slot </item>
         <item>8:00 AM- 9:00 AM</item>
         <item>9:00 AM- 10:00 AM</item>
         <item>10:00 AM- 11:00 AM</item>
@@ -99,7 +99,7 @@
 
 
     <string-array name="software_arrays">
-        <item>Search By Software</item>
+        <item>Select a Software</item>
         <item>Creo</item>
         <item>Vivado</item>
         <item>Minitab</item>
@@ -118,7 +118,7 @@
     <string name="specific_lab_prompt">Specific Lab Lookup</string>
 
     <string-array name="specific_lab_arrays">
-        <item>Search By Labs</item>
+        <item>Select A Lab</item>
         <item>Lab 7</item>
         <item>Lab 8</item>
         <item>Lab 11</item>
@@ -131,7 +131,17 @@
         <item>Lab 176</item>
     </string-array>
 
+    <!-- Strings for the software options dropdown list -->
+    <string name="week_days">Week Day Search</string>
 
+    <string-array name="week_day_array">
+        <item>Select Day of the Week</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+    </string-array>
 
     <string name = "hyperlink" > https://gateway.psu-erie.bd.psu.edu </string>
 

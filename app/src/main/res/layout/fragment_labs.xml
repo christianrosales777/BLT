@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/holo_blue_dark">
@@ -28,25 +29,42 @@
     <Spinner
         android:id="@+id/spinner1"
         android:layout_width="match_parent"
-        android:layout_height="45dp"
+        android:layout_height="40dp"
+        android:dropDownWidth="wrap_content"
+        android:dropDownHeight="100dp"
         android:entries="@array/time_arrays"
         android:prompt="@string/lab_time_prompt"
-        android:textSize="50sp"/>
+        android:textSize="50sp" />
 
     <Spinner
         android:id="@+id/spinner2"
         android:layout_width="match_parent"
-        android:layout_height="45dp"
+        android:layout_height="40dp"
         android:layout_below="@id/spinner1"
-        android:entries="@array/software_arrays"
-        android:prompt="@string/software_prompt"
-        android:textSize="40sp"/>
+        android:dropDownWidth="wrap_content"
+        android:dropDownHeight="100dp"
+        android:entries="@array/week_day_array"
+        android:prompt="@string/week_days"
+        android:textSize="50sp" />
 
     <Spinner
         android:id="@+id/spinner3"
         android:layout_width="match_parent"
-        android:layout_height="45dp"
+        android:layout_height="40dp"
         android:layout_below="@id/spinner2"
+        android:dropDownWidth="wrap_content"
+        android:dropDownHeight="100dp"
+        android:entries="@array/software_arrays"
+        android:prompt="@string/software_prompt"
+        android:textSize="40sp" />
+
+    <Spinner
+        android:id="@+id/spinner4"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/spinner3"
+        android:dropDownWidth="wrap_content"
+        android:dropDownHeight="100dp"
         android:entries="@array/specific_lab_arrays"
         android:prompt="@string/specific_lab_prompt"
         android:textSize="50sp" />
@@ -55,7 +73,7 @@
         android:id="@+id/btnDisplay"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/spinner3"
+        android:layout_below="@id/spinner4"
         android:text="Display Labs"
         android:textSize="20sp" />
 

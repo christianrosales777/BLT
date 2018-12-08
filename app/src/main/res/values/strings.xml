@@ -120,16 +120,16 @@
 
     <string-array name="specific_lab_arrays">
         <item>Select A Lab</item>
-        <item>Lab 7</item>
-        <item>Lab 8</item>
-        <item>Lab 11</item>
-        <item>Lab 12</item>
-        <item>Lab 13</item>
-        <item>Lab 14</item>
-        <item>Lab 15</item>
-        <item>Lab 147</item>
-        <item>Lab 175</item>
-        <item>Lab 176</item>
+        <item>7</item>
+        <item>8</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>147</item>
+        <item>175</item>
+        <item>176</item>
     </string-array>
 
     <!-- Strings for the software options dropdown list -->
@@ -147,4 +147,5 @@
     <string name = "hyperlink" > https://gateway.psu-erie.bd.psu.edu </string>
     <string name = "software_request_hyperlink" >  https://intranet.bd.psu.edu/intranet/instructional-software-readiness-program </string>
 
+    <string name = "lab_textview">Changed</string>
 </resources>

@@ -5,14 +5,16 @@ package edu.psu.cjr5662.blt;
 public class Lab {
     private int labNumber = 0;
     private int computersAvailable = 0;     // number of computers in the lab
-    private ArrayList<String> software = new ArrayList<String>();
+    private String software = " ";
+    int PK;
 
     public Lab(){}
 
-    public Lab(int labNum, int computers, ArrayList<String> arr){
+    public Lab(int pk, int labNum, int computers, String software){
+        this.PK = pk;
         this.labNumber = labNum;
         this.computersAvailable = computers;
-        this.software = arr;
+        this.software = software;
     }
 
     public void setLabNumber(int num){
@@ -22,7 +24,13 @@ public class Lab {
         return this.labNumber;
     }
 
-    // COMPUTER AVAILABILITY
+    public void setPK(int num){
+        this.PK= num;
+    }
+    public int getPK(){
+        return this.PK;
+    }
+
     public void setComputers(int computers){
         this.computersAvailable = computers;
     }
@@ -30,11 +38,10 @@ public class Lab {
         return this.computersAvailable;
     }
 
-    // SOFTWARE AVAILABILITY
-    public void setAvailableSoftware(ArrayList<String> arr){
-        this.software.addAll(arr);
+    public void setAvailableSoftware(String software){
+        this.software = software;
     }
-    public ArrayList<String> getAvailabileSoftware(){
+    public String getAvailabileSoftware(){
         return this.software;
     }
 }

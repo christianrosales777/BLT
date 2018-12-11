@@ -6,15 +6,20 @@ public class Lab {
     private int labNumber = 0;
     private int computersAvailable = 0;     // number of computers in the lab
     private String software = " ";
+    private String day = " ";
+    private String times = " ";
     int PK;
+
 
     public Lab(){}
 
-    public Lab(int pk, int labNum, int computers, String software){
+    public Lab(int pk, int labNum, int computer, String software, String day, String times){
         this.PK = pk;
         this.labNumber = labNum;
-        this.computersAvailable = computers;
+        this.computersAvailable = computer;
         this.software = software;
+        this.day = day;
+        this.times = times;
     }
 
     public void setLabNumber(int num){
@@ -44,4 +49,16 @@ public class Lab {
     public String getAvailabileSoftware(){
         return this.software;
     }
+
+    public void setDay(String day){
+        this.day = day;
+    }
+    public String getDay(){
+        return this.day;
+    }
+
+    public void setTimes(String times){
+        this.times = times;
+    }
+    public String getTimes(){ return this.times; }
 }

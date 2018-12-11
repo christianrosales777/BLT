@@ -16,9 +16,6 @@ import android.widget.ArrayAdapter;
 import android.view.View.OnClickListener;
 
 public class MainActivity extends AppCompatActivity{
-    EditText labNo;
-    EditText software;
-    TextView lst;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

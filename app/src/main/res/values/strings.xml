@@ -107,11 +107,10 @@
         <item>Visual Studio</item>
         <item>Alice</item>
         <item>Matlab</item>
-        <item>Moldflow Synergy</item>
         <item>MathCad</item>
         <item>Inventor</item>
         <item>Java JDK</item>
-        <item>Moldflow Insight</item>
+        <item>Moldflow</item>
         <item>Netbeans</item>
     </string-array>
 
@@ -127,7 +126,10 @@
         <item>13</item>
         <item>14</item>
         <item>15</item>
+        <item>140</item>
+        <item>144</item>
         <item>147</item>
+        <item>153</item>
         <item>175</item>
         <item>176</item>
     </string-array>

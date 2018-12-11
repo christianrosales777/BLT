@@ -13,7 +13,6 @@ import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.ArrayAdapter;
-import android.content.Context;
 
 public class LabsFragment extends Fragment implements View.OnClickListener {
 
@@ -72,13 +71,19 @@ public class LabsFragment extends Fragment implements View.OnClickListener {
         labAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         labSpinner.setAdapter(labAdapter);
 
+        checkListeners();
+
         return view;
     }
 
     @Override
     public void onClick(View v) {
         MyDBHandler dbHandler = new MyDBHandler(getActivity(), null, null, 1);
+        checkListeners();
+        lst.setText(dbHandler.loadHandler(timeInput, dayInput, softwareInput, labInput));
+    }
 
+    public void checkListeners(){
         timeSpinner.setOnItemSelectedListener(new OnItemSelectedListener(){
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
@@ -155,8 +160,6 @@ public class LabsFragment extends Fragment implements View.OnClickListener {
             public void onNothingSelected(AdapterView<?> parent) { }
 
         });
-
-        lst.setText(dbHandler.loadHandler(timeInput, dayInput, softwareInput, labInput));
     }
 
     public void createLabs(MyDBHandler dbHandler){

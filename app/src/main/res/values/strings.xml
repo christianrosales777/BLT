@@ -146,8 +146,8 @@
         <item>Friday</item>
     </string-array>
 
-    <string name = "hyperlink" > https://gateway.psu-erie.bd.psu.edu </string>
-    <string name = "software_request_hyperlink" >  https://intranet.bd.psu.edu/intranet/instructional-software-readiness-program </string>
+    <string name = "hyperlink" > https://gateway.psu-erie.bd.psu.edu \n</string>
+    <string name = "software_request_hyperlink" >  https://intranet.bd.psu.edu/intranet/instructional-software-readiness-program  </string>
 
     <string name = "lab_textview">Changed</string>
 </resources>

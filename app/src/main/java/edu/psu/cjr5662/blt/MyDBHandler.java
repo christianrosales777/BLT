@@ -41,6 +41,8 @@ public class MyDBHandler extends SQLiteOpenHelper {
 
         if(time == null && day == null && software == null && lab == 0){ //0000
             query = "Select * FROM Lab";
+            result += System.getProperty("line.separator") + "VIEWING ALL LABS"
+                    + System.getProperty("line.separator") + System.getProperty("line.separator") ;
         }
         else if(time == null && day == null && software == null){ //0001
             query = "Select * FROM Lab WHERE LabNumber = "+lab;
@@ -98,8 +100,8 @@ public class MyDBHandler extends SQLiteOpenHelper {
             int res1 = cursor.getInt(1);
             int res2 = cursor.getInt(2);
             if(String.valueOf(res1).equals(prev) == false) {
-                result += "  Lab: " + String.valueOf(res1) + "     Computers Available: " + String.valueOf(res2) +
-                        System.getProperty("line.separator");
+                result += "__________________________________"  +System.getProperty("line.separator")+ System.getProperty("line.separator")+ "Lab: " + String.valueOf(res1) +System.getProperty("line.separator")+ "Computers Available: " + String.valueOf(res2) +
+                        System.getProperty("line.separator")+ System.getProperty("line.separator");
             }
             prev = String.valueOf(res1);
         }

@@ -6,6 +6,7 @@
     android:isScrollContainer="true"
     android:scrollbarAlwaysDrawVerticalTrack="true"
     android:scrollbars="vertical">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -14,58 +15,91 @@
         <Spinner
             android:id="@+id/timeSpinner"
             android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_height="45dp"
             android:dropDownWidth="wrap_content"
             android:dropDownHeight="100dp"
             android:entries="@array/time_arrays"
             android:prompt="@string/lab_time_prompt"
-            android:textSize="50sp" />
+            android:textSize="20sp" />
+
+        <View
+            android:id="@+id/timeDayDivider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
 
         <Spinner
             android:id="@+id/daySpinner"
             android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_height="45dp"
             android:dropDownWidth="wrap_content"
             android:dropDownHeight="100dp"
             android:entries="@array/week_day_array"
             android:prompt="@string/week_days"
-            android:textSize="50sp" />
+            android:textSize="20sp" />
+
+        <View
+            android:id="@+id/daySoftwareDivider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
 
         <Spinner
             android:id="@+id/softwareSpinner"
             android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_height="45dp"
             android:dropDownWidth="wrap_content"
             android:dropDownHeight="100dp"
             android:entries="@array/software_arrays"
             android:prompt="@string/software_prompt"
-            android:textSize="40sp" />
+            android:textSize="20sp" />
+
+        <View
+            android:id="@+id/softwareLabDivider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
 
         <Spinner
             android:id="@+id/labSpinner"
             android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_height="45dp"
             android:dropDownWidth="wrap_content"
             android:dropDownHeight="100dp"
             android:entries="@array/specific_lab_arrays"
             android:prompt="@string/specific_lab_prompt"
-            android:textSize="50sp" />
+            android:textSize="20sp" />
         <!-- Need the layout below lines, otherwise it all overlaps -->
+
+        <View
+            android:id="@+id/selectDisplayDivider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
 
         <Button
             android:id="@+id/btnDisplay"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Display Labs"
+            android:textColor="@color/design_default_color_primary_dark"
             android:textSize="20sp" />
+
+        <View
+            android:id="@+id/displayDivider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
 
         <TextView
             android:id="@+id/list"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
             android:textColor="@color/colorPrimaryDark"
-            android:textSize="20sp"/>
-            <!--
+            android:textSize="20sp" />
+        <!--
             android:layout_alignBottom="@+id/fragment_container"
             android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"

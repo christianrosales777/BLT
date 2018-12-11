@@ -21,6 +21,12 @@
             android:textSize="50dp"
             android:textStyle="bold" />
 
+        <View
+            android:id="@+id/divider3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -49,9 +55,15 @@
             android:layout_marginTop="20dp"
             android:autoLink="email"
             android:gravity="center"
-            android:text="BDITHelp@psu.edu"
+            android:text="BDITHelp@psu.edu \n"
             android:textColorLink="@color/colorPrimary"
             android:textSize="18dp" />
+
+        <View
+            android:id="@+id/accessRemoteDivider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
 
         <TextView
             android:layout_width="match_parent"
@@ -74,6 +86,12 @@
             android:text="@string/hyperlink"
             android:textColorLink="@color/colorPrimary"
             android:textSize="18dp" />
+
+        <View
+            android:id="@+id/idAccessLabsDivider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
 
         <TextView
             android:layout_width="match_parent"
@@ -112,9 +130,15 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="20dp"
             android:gravity="center"
-            android:text="Burke 153, 175, 176"
+            android:text="Burke 153, 175, 176 \n"
             android:textColor="@color/colorPrimaryDark"
             android:textSize="18dp" />
+
+        <View
+            android:id="@+id/ISRPDivider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
 
         <TextView
             android:layout_width="match_parent"
